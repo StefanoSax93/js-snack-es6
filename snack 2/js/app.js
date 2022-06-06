@@ -8,3 +8,51 @@ Punti fatti e falli subiti.
 Infine usando la destrutturazione creiamo un nuovo array i 
 cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 */
+
+// creo l'array con le squadre di calcio
+
+const squadreCalcio = [
+    {
+        nome: 'Juventus',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+    {
+        nome: 'Inter',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+    {
+        nome: 'Napoli',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+    {
+        nome: 'Milan',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+    {
+        nome: 'Roma',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+    {
+        nome: 'Lazio',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+    {
+        nome: 'Atalanta',
+        puntiFatti: 0,
+        falliSubiti: 0,
+    },
+];
+
+//genero dei numeri random per le proprietà delle squadre
+for(let i=0; i<squadreCalcio.length; i++){
+    squadreCalcio[i].puntiFatti = Math.floor(Math.random()*100);
+    squadreCalcio[i].falliSubiti = Math.floor(Math.random()*100);
+}
+
+console.log(squadreCalcio);
