@@ -49,10 +49,29 @@ const squadreCalcio = [
     },
 ];
 
+
 //genero dei numeri random per le proprietà delle squadre
 for(let i=0; i<squadreCalcio.length; i++){
-    squadreCalcio[i].puntiFatti = Math.floor(Math.random()*100);
-    squadreCalcio[i].falliSubiti = Math.floor(Math.random()*100);
+    const puntiFatti = Math.floor(Math.random() * 100);
+    const falliSubiti = Math.floor(Math.random() * 100);
+    
+    squadreCalcio[i].puntiFatti = puntiFatti;
+    squadreCalcio[i].falliSubiti = falliSubiti;
 }
 
-console.log(squadreCalcio);
+console.table(squadreCalcio);
+const nuovoArray = [];
+
+for(let i=0; i<squadreCalcio.length; i++){
+//creo un nuovo array con solo i nomi delle squadre e i falli subiti
+    const {nome, falliSubiti} = squadreCalcio[i];
+    nuovoArray.push(
+        {
+            nome,
+            falliSubiti
+        }
+    );
+};
+console.log(nuovoArray);
+
+
