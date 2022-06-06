@@ -52,12 +52,12 @@ for (let i = 1; i < listaBici.length; i++) {
         nome,
         peso,
     };
+
+    const container = document.querySelector('.container');
+    container.innerHTML = 
+    `<h1>La bici più leggera è:</h1>
+    <p>Bici: ${nome} - Peso: ${peso}kg</p>`;
 }
 };
 
-console.log(`Bici: ${biciConPesoMinore.nome} - Peso: ${biciConPesoMinore.peso}kg`);
 
-const container = document.querySelector('.container');
-container.innerHTML += 
-`<h1>La bici più leggera è:</h1>
-<p>Bici: ${biciConPesoMinore.nome} - Peso: ${biciConPesoMinore.peso}kg</p>`;
