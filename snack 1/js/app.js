@@ -56,3 +56,8 @@ for (let i = 1; i < listaBici.length; i++) {
 };
 
 console.log(`Bici: ${biciConPesoMinore.nome} - Peso: ${biciConPesoMinore.peso}kg`);
+
+const container = document.querySelector('.container');
+container.innerHTML += 
+`<h1>La bici più leggera è:</h1>
+<p>Bici: ${biciConPesoMinore.nome} - Peso: ${biciConPesoMinore.peso}kg</p>`;
