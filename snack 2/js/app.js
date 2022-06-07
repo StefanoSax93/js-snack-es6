@@ -60,15 +60,16 @@ for(let i=0; i<squadreCalcio.length; i++){
 }
 
 console.table(squadreCalcio);
+//creo un nuovo array con solo i nomi delle squadre e i falli subiti
 const nuovoArray = [];
 
 for(let i=0; i<squadreCalcio.length; i++){
-//creo un nuovo array con solo i nomi delle squadre e i falli subiti
     const {nome, falliSubiti} = squadreCalcio[i];
+    //pusho nomi e falli subiti nel nuovo array      
     nuovoArray.push(
         {
-            nome,
-            falliSubiti
+            nome,            //è come se scrivessi nome: nome,
+            falliSubiti      //è come se scrivessi falliSubiti: falliSubiti
         }
     );
 };
